@@ -1,0 +1,10 @@
+2023-09-05 23:26:21,748 - aggregation - INFO - {'model_name': 'Yolo', 'model_config': 'data/task_configs/yolo/street_5/yolo_model.json', 'log_dir': 'yolo/street_5', 'model_path': 'yolo_model.pkl', 'MIN_NUM_WORKERS': 5, 'MAX_NUM_ROUNDS': 1000, 'NUM_TOLERATE': -1, 'NUM_CLIENTS_CONTACTED_PER_ROUND': 5, 'ROUNDS_BETWEEN_VALIDATIONS': 1000}
+2023-09-05 23:26:21,748 - aggregation - INFO - Good morning, Sir.
+2023-09-05 23:26:23,504 - aggregation - INFO - parameters loaded ... delete the model
+2023-09-05 23:28:07,146 - aggregation - INFO - ### Round 0 ###
+2023-09-05 23:28:07,146 - aggregation - INFO - request updates from ['a527e4a7fc4a44e9b0c7258d2d0ef510', '3a9b66a4867a4a4ba9beca84cc53a829', 'df11d60e878f4b23869eca7e24447e75', 'cdbb028c0ae94290916232c10355d084', '9bce41df523f4cae955788147c287d93']
+2023-09-05 23:28:07,621 - aggregation - INFO - sent initial model to client
+2023-09-05 23:28:07,622 - aggregation - INFO - sent initial model to client
+2023-09-05 23:28:07,623 - aggregation - INFO - sent initial model to client
+2023-09-05 23:28:07,624 - aggregation - INFO - sent initial model to client
+2023-09-05 23:28:07,625 - aggregation - INFO - sent initial model to client

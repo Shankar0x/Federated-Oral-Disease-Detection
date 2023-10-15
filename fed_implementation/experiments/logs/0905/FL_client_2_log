@@ -1,0 +1,9 @@
+2023-09-05 14:49:08,866 - client - INFO - {'model_name': 'Yolo', 'model_config': 'data/task_configs/yolo/street_5/yolo_model.json', 'log_filename': 'yolo/street_5/FL_client_2_log', 'train': 'data/street_5/2/train.txt', 'test': 'data/street_5/2/test.txt', 'names': 'data/street_5/classes.names', 'n_cpu': 4, 'local_epoch': 5, 'batch_size': 1}
+2023-09-05 14:49:10,314 - client - INFO - ### Round 0 ###
+2023-09-05 14:49:10,314 - client - INFO - received initial model
+2023-09-05 17:43:55,553 - client - INFO - {'model_name': 'Yolo', 'model_config': 'data/task_configs/yolo/street_5/yolo_model.json', 'log_filename': 'yolo/street_5/FL_client_2_log', 'train': 'data/street_5/2/train.txt', 'test': 'data/street_5/2/test.txt', 'names': 'data/street_5/classes.names', 'n_cpu': 4, 'local_epoch': 5, 'batch_size': 1}
+2023-09-05 17:43:56,829 - client - INFO - ### Round 0 ###
+2023-09-05 17:43:56,829 - client - INFO - received initial model
+2023-09-05 23:28:05,713 - client - INFO - {'model_name': 'Yolo', 'model_config': 'data/task_configs/yolo/street_5/yolo_model.json', 'log_filename': 'yolo/street_5/FL_client_2_log', 'train': 'data/street_5/2/train.txt', 'test': 'data/street_5/2/test.txt', 'names': 'data/street_5/classes.names', 'n_cpu': 4, 'local_epoch': 5, 'batch_size': 1}
+2023-09-05 23:28:07,623 - client - INFO - ### Round 0 ###
+2023-09-05 23:28:07,623 - client - INFO - received initial model

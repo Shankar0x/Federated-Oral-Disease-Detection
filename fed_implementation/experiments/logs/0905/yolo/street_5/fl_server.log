@@ -1,0 +1,231 @@
+Namespace(config_file='data/task_configs/yolo/street_5/yolo_task.json', port=1239)
+INFO:engineio.server:Server initialized for threading.
+INFO:aggregation:{'model_name': 'Yolo', 'model_config': 'data/task_configs/yolo/street_5/yolo_model.json', 'log_dir': 'yolo/street_5', 'model_path': 'yolo_model.pkl', 'MIN_NUM_WORKERS': 5, 'MAX_NUM_ROUNDS': 1000, 'NUM_TOLERATE': -1, 'NUM_CLIENTS_CONTACTED_PER_ROUND': 5, 'ROUNDS_BETWEEN_VALIDATIONS': 1000}
+INFO:aggregation:Good morning, Sir.
+{'model_def': 'config/yolov3-custom-street.cfg', 'pretrained_weights': 'weights/darknet53.conv.74', 'multiscale_training': True, 'gradient_accumulations': 2, 'img_size': 416}
+config/yolov3-custom-street.cfg
+INFO:root:model construct completed
+INFO:aggregation:parameters loaded ... delete the model
+listening on 127.0.0.1:1239
+WARNING:werkzeug:WebSocket transport not available. Install eventlet or gevent and gevent-websocket for improved performance.
+ * Serving Flask app 'fl_server' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+INFO:werkzeug: * Running on http://127.0.0.1:1239/ (Press CTRL+C to quit)
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Sending packet OPEN data {'sid': 'a527e4a7fc4a44e9b0c7258d2d0ef510', 'upgrades': [], 'pingTimeout': 3600000000, 'pingInterval': 3600000000}
+a527e4a7fc4a44e9b0c7258d2d0ef510 connected
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Sending packet MESSAGE data 0
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:05] "GET /socket.io/?EIO=3&transport=polling&t=1693936685713-0 HTTP/1.1" 200 -
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Received packet PING data None
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Sending packet PONG data None
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:05] "POST /socket.io/?EIO=3&transport=polling&sid=a527e4a7fc4a44e9b0c7258d2d0ef510&t=1693936685717-1 HTTP/1.1" 200 -
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Received packet MESSAGE data 2["client_wake_up"]
+INFO:socketio.server:received event "client_wake_up" from a527e4a7fc4a44e9b0c7258d2d0ef510 [/]
+client wake_up:  a527e4a7fc4a44e9b0c7258d2d0ef510
+INFO:socketio.server:emitting event "init" to a527e4a7fc4a44e9b0c7258d2d0ef510 [/]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:05] "POST /socket.io/?EIO=3&transport=polling&sid=a527e4a7fc4a44e9b0c7258d2d0ef510&t=1693936685720-2 HTTP/1.1" 200 -
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Sending packet MESSAGE data 2["init"]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:05] "GET /socket.io/?EIO=3&transport=polling&sid=a527e4a7fc4a44e9b0c7258d2d0ef510&t=1693936685722-3 HTTP/1.1" 200 -
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Received packet PING data None
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Sending packet PONG data None
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:05] "POST /socket.io/?EIO=3&transport=polling&sid=a527e4a7fc4a44e9b0c7258d2d0ef510&t=1693936685723-4 HTTP/1.1" 200 -
+INFO:engineio.server:3a9b66a4867a4a4ba9beca84cc53a829: Sending packet OPEN data {'sid': '3a9b66a4867a4a4ba9beca84cc53a829', 'upgrades': [], 'pingTimeout': 3600000000, 'pingInterval': 3600000000}
+3a9b66a4867a4a4ba9beca84cc53a829 connected
+INFO:engineio.server:3a9b66a4867a4a4ba9beca84cc53a829: Sending packet MESSAGE data 0
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:05] "GET /socket.io/?EIO=3&transport=polling&t=1693936685807-0 HTTP/1.1" 200 -
+INFO:engineio.server:3a9b66a4867a4a4ba9beca84cc53a829: Received packet PING data None
+INFO:engineio.server:3a9b66a4867a4a4ba9beca84cc53a829: Sending packet PONG data None
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:05] "POST /socket.io/?EIO=3&transport=polling&sid=3a9b66a4867a4a4ba9beca84cc53a829&t=1693936685811-1 HTTP/1.1" 200 -
+INFO:engineio.server:3a9b66a4867a4a4ba9beca84cc53a829: Received packet MESSAGE data 2["client_wake_up"]
+INFO:socketio.server:received event "client_wake_up" from 3a9b66a4867a4a4ba9beca84cc53a829 [/]
+client wake_up:  3a9b66a4867a4a4ba9beca84cc53a829
+INFO:socketio.server:emitting event "init" to 3a9b66a4867a4a4ba9beca84cc53a829 [/]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:05] "POST /socket.io/?EIO=3&transport=polling&sid=3a9b66a4867a4a4ba9beca84cc53a829&t=1693936685813-2 HTTP/1.1" 200 -
+INFO:engineio.server:3a9b66a4867a4a4ba9beca84cc53a829: Sending packet MESSAGE data 2["init"]
+INFO:engineio.server:3a9b66a4867a4a4ba9beca84cc53a829: Received packet PING data None
+INFO:engineio.server:3a9b66a4867a4a4ba9beca84cc53a829: Sending packet PONG data None
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:05] "POST /socket.io/?EIO=3&transport=polling&sid=3a9b66a4867a4a4ba9beca84cc53a829&t=1693936685816-4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:05] "GET /socket.io/?EIO=3&transport=polling&sid=3a9b66a4867a4a4ba9beca84cc53a829&t=1693936685815-3 HTTP/1.1" 200 -
+INFO:engineio.server:9bce41df523f4cae955788147c287d93: Sending packet OPEN data {'sid': '9bce41df523f4cae955788147c287d93', 'upgrades': [], 'pingTimeout': 3600000000, 'pingInterval': 3600000000}
+9bce41df523f4cae955788147c287d93 connected
+INFO:engineio.server:9bce41df523f4cae955788147c287d93: Sending packet MESSAGE data 0
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "GET /socket.io/?EIO=3&transport=polling&t=1693936686012-0 HTTP/1.1" 200 -
+INFO:engineio.server:9bce41df523f4cae955788147c287d93: Received packet PING data None
+INFO:engineio.server:9bce41df523f4cae955788147c287d93: Sending packet PONG data None
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "POST /socket.io/?EIO=3&transport=polling&sid=9bce41df523f4cae955788147c287d93&t=1693936686038-1 HTTP/1.1" 200 -
+INFO:engineio.server:9bce41df523f4cae955788147c287d93: Received packet MESSAGE data 2["client_wake_up"]
+INFO:socketio.server:received event "client_wake_up" from 9bce41df523f4cae955788147c287d93 [/]
+client wake_up:  9bce41df523f4cae955788147c287d93
+INFO:socketio.server:emitting event "init" to 9bce41df523f4cae955788147c287d93 [/]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "POST /socket.io/?EIO=3&transport=polling&sid=9bce41df523f4cae955788147c287d93&t=1693936686041-2 HTTP/1.1" 200 -
+INFO:engineio.server:9bce41df523f4cae955788147c287d93: Sending packet MESSAGE data 2["init"]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "GET /socket.io/?EIO=3&transport=polling&sid=9bce41df523f4cae955788147c287d93&t=1693936686043-3 HTTP/1.1" 200 -
+INFO:engineio.server:9bce41df523f4cae955788147c287d93: Received packet PING data None
+INFO:engineio.server:9bce41df523f4cae955788147c287d93: Sending packet PONG data None
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "POST /socket.io/?EIO=3&transport=polling&sid=9bce41df523f4cae955788147c287d93&t=1693936686044-4 HTTP/1.1" 200 -
+INFO:engineio.server:df11d60e878f4b23869eca7e24447e75: Sending packet OPEN data {'sid': 'df11d60e878f4b23869eca7e24447e75', 'upgrades': [], 'pingTimeout': 3600000000, 'pingInterval': 3600000000}
+df11d60e878f4b23869eca7e24447e75 connected
+INFO:engineio.server:df11d60e878f4b23869eca7e24447e75: Sending packet MESSAGE data 0
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "GET /socket.io/?EIO=3&transport=polling&t=1693936686269-0 HTTP/1.1" 200 -
+INFO:engineio.server:df11d60e878f4b23869eca7e24447e75: Received packet PING data None
+INFO:engineio.server:df11d60e878f4b23869eca7e24447e75: Sending packet PONG data None
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "POST /socket.io/?EIO=3&transport=polling&sid=df11d60e878f4b23869eca7e24447e75&t=1693936686272-1 HTTP/1.1" 200 -
+INFO:engineio.server:df11d60e878f4b23869eca7e24447e75: Received packet MESSAGE data 2["client_wake_up"]
+INFO:socketio.server:received event "client_wake_up" from df11d60e878f4b23869eca7e24447e75 [/]
+client wake_up:  df11d60e878f4b23869eca7e24447e75
+INFO:socketio.server:emitting event "init" to df11d60e878f4b23869eca7e24447e75 [/]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "POST /socket.io/?EIO=3&transport=polling&sid=df11d60e878f4b23869eca7e24447e75&t=1693936686279-2 HTTP/1.1" 200 -
+INFO:engineio.server:df11d60e878f4b23869eca7e24447e75: Sending packet MESSAGE data 2["init"]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "GET /socket.io/?EIO=3&transport=polling&sid=df11d60e878f4b23869eca7e24447e75&t=1693936686289-3 HTTP/1.1" 200 -
+INFO:engineio.server:df11d60e878f4b23869eca7e24447e75: Received packet PING data None
+INFO:engineio.server:df11d60e878f4b23869eca7e24447e75: Sending packet PONG data None
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "POST /socket.io/?EIO=3&transport=polling&sid=df11d60e878f4b23869eca7e24447e75&t=1693936686291-4 HTTP/1.1" 200 -
+INFO:engineio.server:3a9b66a4867a4a4ba9beca84cc53a829: Received packet MESSAGE data 2["client_ready"]
+INFO:socketio.server:received event "client_ready" from 3a9b66a4867a4a4ba9beca84cc53a829 [/]
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Received packet MESSAGE data 2["client_ready"]
+INFO:socketio.server:received event "client_ready" from a527e4a7fc4a44e9b0c7258d2d0ef510 [/]
+client ready for training a527e4a7fc4a44e9b0c7258d2d0ef510
+not enough client worker running.....
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "POST /socket.io/?EIO=3&transport=polling&sid=a527e4a7fc4a44e9b0c7258d2d0ef510&t=1693936686407-5 HTTP/1.1" 200 -
+client ready for training 3a9b66a4867a4a4ba9beca84cc53a829
+not enough client worker running.....
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "POST /socket.io/?EIO=3&transport=polling&sid=3a9b66a4867a4a4ba9beca84cc53a829&t=1693936686405-5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "GET /socket.io/?EIO=3&transport=polling&sid=a527e4a7fc4a44e9b0c7258d2d0ef510&t=1693936686453-6 HTTP/1.1" 200 -
+INFO:engineio.server:cdbb028c0ae94290916232c10355d084: Sending packet OPEN data {'sid': 'cdbb028c0ae94290916232c10355d084', 'upgrades': [], 'pingTimeout': 3600000000, 'pingInterval': 3600000000}
+cdbb028c0ae94290916232c10355d084 connected
+INFO:engineio.server:cdbb028c0ae94290916232c10355d084: Sending packet MESSAGE data 0
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "GET /socket.io/?EIO=3&transport=polling&t=1693936686588-0 HTTP/1.1" 200 -
+INFO:engineio.server:cdbb028c0ae94290916232c10355d084: Received packet PING data None
+INFO:engineio.server:cdbb028c0ae94290916232c10355d084: Sending packet PONG data None
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "POST /socket.io/?EIO=3&transport=polling&sid=cdbb028c0ae94290916232c10355d084&t=1693936686597-1 HTTP/1.1" 200 -
+INFO:engineio.server:cdbb028c0ae94290916232c10355d084: Received packet MESSAGE data 2["client_wake_up"]
+INFO:socketio.server:received event "client_wake_up" from cdbb028c0ae94290916232c10355d084 [/]
+client wake_up:  cdbb028c0ae94290916232c10355d084
+INFO:socketio.server:emitting event "init" to cdbb028c0ae94290916232c10355d084 [/]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "POST /socket.io/?EIO=3&transport=polling&sid=cdbb028c0ae94290916232c10355d084&t=1693936686599-2 HTTP/1.1" 200 -
+INFO:engineio.server:cdbb028c0ae94290916232c10355d084: Sending packet MESSAGE data 2["init"]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "GET /socket.io/?EIO=3&transport=polling&sid=cdbb028c0ae94290916232c10355d084&t=1693936686602-3 HTTP/1.1" 200 -
+INFO:engineio.server:cdbb028c0ae94290916232c10355d084: Received packet PING data None
+INFO:engineio.server:cdbb028c0ae94290916232c10355d084: Sending packet PONG data None
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "POST /socket.io/?EIO=3&transport=polling&sid=cdbb028c0ae94290916232c10355d084&t=1693936686602-4 HTTP/1.1" 200 -
+INFO:engineio.server:9bce41df523f4cae955788147c287d93: Received packet MESSAGE data 2["client_ready"]
+INFO:socketio.server:received event "client_ready" from 9bce41df523f4cae955788147c287d93 [/]
+client ready for training 9bce41df523f4cae955788147c287d93
+not enough client worker running.....
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "POST /socket.io/?EIO=3&transport=polling&sid=9bce41df523f4cae955788147c287d93&t=1693936686690-5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "GET /socket.io/?EIO=3&transport=polling&sid=9bce41df523f4cae955788147c287d93&t=1693936686692-6 HTTP/1.1" 200 -
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Received packet PING data None
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Sending packet PONG data None
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "POST /socket.io/?EIO=3&transport=polling&sid=a527e4a7fc4a44e9b0c7258d2d0ef510&t=1693936686726-8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "GET /socket.io/?EIO=3&transport=polling&sid=a527e4a7fc4a44e9b0c7258d2d0ef510&t=1693936686485-7 HTTP/1.1" 200 -
+INFO:engineio.server:3a9b66a4867a4a4ba9beca84cc53a829: Received packet PING data None
+INFO:engineio.server:3a9b66a4867a4a4ba9beca84cc53a829: Sending packet PONG data None
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "GET /socket.io/?EIO=3&transport=polling&sid=3a9b66a4867a4a4ba9beca84cc53a829&t=1693936686453-6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "POST /socket.io/?EIO=3&transport=polling&sid=3a9b66a4867a4a4ba9beca84cc53a829&t=1693936686819-7 HTTP/1.1" 200 -
+INFO:engineio.server:df11d60e878f4b23869eca7e24447e75: Received packet MESSAGE data 2["client_ready"]
+INFO:socketio.server:received event "client_ready" from df11d60e878f4b23869eca7e24447e75 [/]
+client ready for training df11d60e878f4b23869eca7e24447e75
+not enough client worker running.....
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "POST /socket.io/?EIO=3&transport=polling&sid=df11d60e878f4b23869eca7e24447e75&t=1693936686944-5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:06] "GET /socket.io/?EIO=3&transport=polling&sid=df11d60e878f4b23869eca7e24447e75&t=1693936686947-6 HTTP/1.1" 200 -
+INFO:engineio.server:9bce41df523f4cae955788147c287d93: Received packet PING data None
+INFO:engineio.server:9bce41df523f4cae955788147c287d93: Sending packet PONG data None
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "GET /socket.io/?EIO=3&transport=polling&sid=9bce41df523f4cae955788147c287d93&t=1693936686694-7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "POST /socket.io/?EIO=3&transport=polling&sid=9bce41df523f4cae955788147c287d93&t=1693936687047-8 HTTP/1.1" 200 -
+INFO:engineio.server:cdbb028c0ae94290916232c10355d084: Received packet MESSAGE data 2["client_ready"]
+INFO:socketio.server:received event "client_ready" from cdbb028c0ae94290916232c10355d084 [/]
+client ready for training cdbb028c0ae94290916232c10355d084
+start to federated learning.....
+send weights
+INFO:socketio.server:emitting event "check_client_resource" to cdbb028c0ae94290916232c10355d084 [/]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "POST /socket.io/?EIO=3&transport=polling&sid=cdbb028c0ae94290916232c10355d084&t=1693936687137-5 HTTP/1.1" 200 -
+INFO:engineio.server:cdbb028c0ae94290916232c10355d084: Sending packet MESSAGE data 2["check_client_resource",{"round_number":-1}]
+INFO:socketio.server:emitting event "check_client_resource" to 3a9b66a4867a4a4ba9beca84cc53a829 [/]
+INFO:engineio.server:3a9b66a4867a4a4ba9beca84cc53a829: Sending packet MESSAGE data 2["check_client_resource",{"round_number":-1}]
+INFO:socketio.server:emitting event "check_client_resource" to df11d60e878f4b23869eca7e24447e75 [/]
+INFO:engineio.server:df11d60e878f4b23869eca7e24447e75: Sending packet MESSAGE data 2["check_client_resource",{"round_number":-1}]
+INFO:socketio.server:emitting event "check_client_resource" to 9bce41df523f4cae955788147c287d93 [/]
+INFO:engineio.server:9bce41df523f4cae955788147c287d93: Sending packet MESSAGE data 2["check_client_resource",{"round_number":-1}]
+INFO:socketio.server:emitting event "check_client_resource" to a527e4a7fc4a44e9b0c7258d2d0ef510 [/]
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Sending packet MESSAGE data 2["check_client_resource",{"round_number":-1}]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "GET /socket.io/?EIO=3&transport=polling&sid=9bce41df523f4cae955788147c287d93&t=1693936687050-9 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "GET /socket.io/?EIO=3&transport=polling&sid=df11d60e878f4b23869eca7e24447e75&t=1693936686948-7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "GET /socket.io/?EIO=3&transport=polling&sid=a527e4a7fc4a44e9b0c7258d2d0ef510&t=1693936686729-9 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "GET /socket.io/?EIO=3&transport=polling&sid=3a9b66a4867a4a4ba9beca84cc53a829&t=1693936686823-8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "GET /socket.io/?EIO=3&transport=polling&sid=cdbb028c0ae94290916232c10355d084&t=1693936687140-6 HTTP/1.1" 200 -
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Received packet MESSAGE data 2["check_client_resource_done", {"round_number": -1, "load_rate": 0.15}]
+INFO:engineio.server:3a9b66a4867a4a4ba9beca84cc53a829: Received packet MESSAGE data 2["check_client_resource_done", {"round_number": -1, "load_rate": 0.15}]
+INFO:socketio.server:received event "check_client_resource_done" from a527e4a7fc4a44e9b0c7258d2d0ef510 [/]
+INFO:socketio.server:received event "check_client_resource_done" from 3a9b66a4867a4a4ba9beca84cc53a829 [/]
+INFO:engineio.server:df11d60e878f4b23869eca7e24447e75: Received packet MESSAGE data 2["check_client_resource_done", {"round_number": -1, "load_rate": 0.15}]
+INFO:engineio.server:9bce41df523f4cae955788147c287d93: Received packet MESSAGE data 2["check_client_resource_done", {"round_number": -1, "load_rate": 0.15}]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "POST /socket.io/?EIO=3&transport=polling&sid=a527e4a7fc4a44e9b0c7258d2d0ef510&t=1693936687141-10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "POST /socket.io/?EIO=3&transport=polling&sid=3a9b66a4867a4a4ba9beca84cc53a829&t=1693936687141-9 HTTP/1.1" 200 -
+INFO:socketio.server:received event "check_client_resource_done" from df11d60e878f4b23869eca7e24447e75 [/]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "POST /socket.io/?EIO=3&transport=polling&sid=df11d60e878f4b23869eca7e24447e75&t=1693936687142-8 HTTP/1.1" 200 -
+INFO:engineio.server:cdbb028c0ae94290916232c10355d084: Received packet MESSAGE data 2["check_client_resource_done", {"round_number": -1, "load_rate": 0.15}]
+INFO:socketio.server:received event "check_client_resource_done" from cdbb028c0ae94290916232c10355d084 [/]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "POST /socket.io/?EIO=3&transport=polling&sid=cdbb028c0ae94290916232c10355d084&t=1693936687144-7 HTTP/1.1" 200 -
+INFO:socketio.server:received event "check_client_resource_done" from 9bce41df523f4cae955788147c287d93 [/]
+a527e4a7fc4a44e9b0c7258d2d0ef510 cpu rate:  0.15
+a527e4a7fc4a44e9b0c7258d2d0ef510 satisfy
+3a9b66a4867a4a4ba9beca84cc53a829 cpu rate:  0.15
+3a9b66a4867a4a4ba9beca84cc53a829 satisfy
+df11d60e878f4b23869eca7e24447e75 cpu rate:  0.15
+df11d60e878f4b23869eca7e24447e75 satisfy
+cdbb028c0ae94290916232c10355d084 cpu rate:  0.15
+cdbb028c0ae94290916232c10355d084 satisfy
+9bce41df523f4cae955788147c287d93 cpu rate:  0.15
+9bce41df523f4cae955788147c287d93 satisfy
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "POST /socket.io/?EIO=3&transport=polling&sid=9bce41df523f4cae955788147c287d93&t=1693936687142-10 HTTP/1.1" 200 -
+INFO:aggregation:### Round 0 ###
+INFO:aggregation:request updates from ['a527e4a7fc4a44e9b0c7258d2d0ef510', '3a9b66a4867a4a4ba9beca84cc53a829', 'df11d60e878f4b23869eca7e24447e75', 'cdbb028c0ae94290916232c10355d084', '9bce41df523f4cae955788147c287d93']
+save model to file
+INFO:engineio.server:df11d60e878f4b23869eca7e24447e75: Received packet PING data None
+INFO:engineio.server:df11d60e878f4b23869eca7e24447e75: Sending packet PONG data None
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "GET /socket.io/?EIO=3&transport=polling&sid=df11d60e878f4b23869eca7e24447e75&t=1693936687146-9 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "POST /socket.io/?EIO=3&transport=polling&sid=df11d60e878f4b23869eca7e24447e75&t=1693936687303-10 HTTP/1.1" 200 -
+INFO:engineio.server:cdbb028c0ae94290916232c10355d084: Received packet PING data None
+INFO:engineio.server:cdbb028c0ae94290916232c10355d084: Sending packet PONG data None
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "POST /socket.io/?EIO=3&transport=polling&sid=cdbb028c0ae94290916232c10355d084&t=1693936687605-9 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "GET /socket.io/?EIO=3&transport=polling&sid=cdbb028c0ae94290916232c10355d084&t=1693936687146-8 HTTP/1.1" 200 -
+INFO:socketio.server:emitting event "request_update" to a527e4a7fc4a44e9b0c7258d2d0ef510 [/]
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Sending packet MESSAGE data 2["request_update",{"model_id":"bbaa1b83-2db3-4665-91ee-4135eb3b36e6","round_number":0,"current_weights":"yolo_model.pkl","model_path":"yolo_model.pkl"}]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "GET /socket.io/?EIO=3&transport=polling&sid=a527e4a7fc4a44e9b0c7258d2d0ef510&t=1693936687145-11 HTTP/1.1" 200 -
+INFO:aggregation:sent initial model to client
+INFO:socketio.server:emitting event "request_update" to 3a9b66a4867a4a4ba9beca84cc53a829 [/]
+INFO:engineio.server:3a9b66a4867a4a4ba9beca84cc53a829: Sending packet MESSAGE data 2["request_update",{"model_id":"bbaa1b83-2db3-4665-91ee-4135eb3b36e6","round_number":0,"current_weights":"yolo_model.pkl","model_path":"yolo_model.pkl"}]
+INFO:aggregation:sent initial model to client
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "GET /socket.io/?EIO=3&transport=polling&sid=3a9b66a4867a4a4ba9beca84cc53a829&t=1693936687145-10 HTTP/1.1" 200 -
+INFO:socketio.server:emitting event "request_update" to df11d60e878f4b23869eca7e24447e75 [/]
+INFO:engineio.server:df11d60e878f4b23869eca7e24447e75: Sending packet MESSAGE data 2["request_update",{"model_id":"bbaa1b83-2db3-4665-91ee-4135eb3b36e6","round_number":0,"current_weights":"yolo_model.pkl","model_path":"yolo_model.pkl"}]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "GET /socket.io/?EIO=3&transport=polling&sid=df11d60e878f4b23869eca7e24447e75&t=1693936687305-11 HTTP/1.1" 200 -
+INFO:aggregation:sent initial model to client
+INFO:socketio.server:emitting event "request_update" to cdbb028c0ae94290916232c10355d084 [/]
+INFO:engineio.server:cdbb028c0ae94290916232c10355d084: Sending packet MESSAGE data 2["request_update",{"model_id":"bbaa1b83-2db3-4665-91ee-4135eb3b36e6","round_number":0,"current_weights":"yolo_model.pkl","model_path":"yolo_model.pkl"}]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "GET /socket.io/?EIO=3&transport=polling&sid=cdbb028c0ae94290916232c10355d084&t=1693936687608-10 HTTP/1.1" 200 -
+INFO:aggregation:sent initial model to client
+INFO:socketio.server:emitting event "request_update" to 9bce41df523f4cae955788147c287d93 [/]
+INFO:engineio.server:9bce41df523f4cae955788147c287d93: Sending packet MESSAGE data 2["request_update",{"model_id":"bbaa1b83-2db3-4665-91ee-4135eb3b36e6","round_number":0,"current_weights":"yolo_model.pkl","model_path":"yolo_model.pkl"}]
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "GET /socket.io/?EIO=3&transport=polling&sid=9bce41df523f4cae955788147c287d93&t=1693936687147-11 HTTP/1.1" 200 -
+INFO:aggregation:sent initial model to client
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Received packet PING data None
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Sending packet PONG data None
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "POST /socket.io/?EIO=3&transport=polling&sid=a527e4a7fc4a44e9b0c7258d2d0ef510&t=1693936687729-12 HTTP/1.1" 200 -
+INFO:engineio.server:9bce41df523f4cae955788147c287d93: Received packet CLOSE data None
+9bce41df523f4cae955788147c287d93 disconnected
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "POST /socket.io/?EIO=3&transport=polling&sid=9bce41df523f4cae955788147c287d93&t=1693936687818-12 HTTP/1.1" 200 -
+INFO:engineio.server:3a9b66a4867a4a4ba9beca84cc53a829: Received packet CLOSE data None
+3a9b66a4867a4a4ba9beca84cc53a829 disconnected
+INFO:engineio.server:a527e4a7fc4a44e9b0c7258d2d0ef510: Received packet CLOSE data None
+a527e4a7fc4a44e9b0c7258d2d0ef510 disconnected
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "POST /socket.io/?EIO=3&transport=polling&sid=3a9b66a4867a4a4ba9beca84cc53a829&t=1693936687820-11 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "POST /socket.io/?EIO=3&transport=polling&sid=a527e4a7fc4a44e9b0c7258d2d0ef510&t=1693936687820-13 HTTP/1.1" 200 -
+INFO:engineio.server:df11d60e878f4b23869eca7e24447e75: Received packet CLOSE data None
+df11d60e878f4b23869eca7e24447e75 disconnected
+INFO:engineio.server:cdbb028c0ae94290916232c10355d084: Received packet CLOSE data None
+cdbb028c0ae94290916232c10355d084 disconnected
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "POST /socket.io/?EIO=3&transport=polling&sid=df11d60e878f4b23869eca7e24447e75&t=1693936687826-12 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2023 23:28:07] "POST /socket.io/?EIO=3&transport=polling&sid=cdbb028c0ae94290916232c10355d084&t=1693936687827-11 HTTP/1.1" 200 -
